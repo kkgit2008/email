@@ -1,4 +1,9 @@
-# !!! email: hicesa#@qq.com !!!
+# 常用sh脚本工具: [click](tools)
+
+# 
+# 
+
+# email: hicesa#@qq.com
  
 # https://game.candyzone.net/Firework_Simulator_v2/
 
