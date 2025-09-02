@@ -1,0 +1,5 @@
+# 示例: 需要复制的文件
+smali_ORI/GA0.smali
+smali_CNC/GA0.smali
+smali_ORI/O82.smali
+smali_CNC/O82.smali
