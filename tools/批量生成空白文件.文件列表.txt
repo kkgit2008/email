@@ -1,0 +1,6 @@
+.turingdebug
+.xlDownload
+com.miui.guardprovider_TMF_TMS
+com.miui.voiceassist
+duilite
+mipush
