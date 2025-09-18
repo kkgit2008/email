@@ -9,7 +9,7 @@ mkdir -p file
 
 # 检查文件列表.txt是否存在
 if [ ! -f "批量生成空白文件.文件列表.txt" ]; then
-    echo "错误：文件列表.txt 文件不存在"
+    echo "错误：批量生成空白文件.文件列表.txt 文件不存在"
     exit 1
 fi
 
@@ -28,20 +28,29 @@ while IFS= read -r filename || [ -n "$filename" ]; do
     fi
 
     filepath="file/$filename"
+    display_name="$filename"  # 用于显示的名称，不包含file目录
     
     # 检查文件是否已存在
     if [ -e "$filepath" ]; then
-        echo "[已存在] $filepath"
+        echo "[已存在] $display_name"
         ((existing_count++))
+        continue
+    fi
+    
+    # 提取目录部分并创建（如果需要）
+    dirpath=$(dirname "$filepath")
+    if ! mkdir -p "$dirpath" 2>/dev/null; then
+        echo "[创建失败] $display_name (无法创建目录)"
+        ((failed_count++))
         continue
     fi
     
     # 尝试创建文件
     if echo '/\/' > "$filepath" 2>/dev/null; then
-        echo "[创建成功] $filepath"
+        echo "[创建成功] $display_name"
         ((created_count++))
     else
-        echo "[创建失败] $filepath"
+        echo "[创建失败] $display_name"
         ((failed_count++))
     fi
 done < "批量生成空白文件.文件列表.txt"
