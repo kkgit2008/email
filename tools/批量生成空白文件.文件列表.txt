@@ -1,4 +1,5 @@
-.turingdebug
+
+.turing.dat/自定义文件夹，别删除！
 .xlDownload
 com.miui.guardprovider_TMF_TMS
 com.miui.voiceassist
