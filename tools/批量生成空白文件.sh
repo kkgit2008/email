@@ -1,5 +1,12 @@
 #!/bin/bash
 
+
+
+
+# TIME:20250921
+
+
+
 # 获取脚本所在绝对路径，并切换到该目录
 SCRIPT_DIR=$(cd "$(dirname "$0")" && pwd)
 cd "$SCRIPT_DIR" || { echo "无法切换到脚本所在目录"; exit 1; }
