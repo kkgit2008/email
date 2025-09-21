@@ -1,3 +1,7 @@
+#!/system/bin/sh
+
+
+
 
 # TIME:20250921
 
@@ -11,7 +15,6 @@
 
 
 
-#!/bin/sh
 
 MOD_DIR="0mod_0028df419965cc4b5e01bf0e3e053235"
 FILE_NAME_LIST="0fileNameList_0028df419965cc4b5e01bf0e3e053235.txt"
