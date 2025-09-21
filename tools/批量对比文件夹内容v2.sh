@@ -1,5 +1,11 @@
 #!/bin/bash
 
+
+
+# TIME:20250921
+
+
+
 # 定义对比目录
 COMPARE_DIR="Compare730b1e0e7ddfa4ee07a8ec607"
 SCRIPT_DIR=$(cd "$(dirname "$0")" && pwd) || { echo "无法确定脚本目录"; exit 1; }
