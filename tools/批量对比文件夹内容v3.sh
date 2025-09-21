@@ -1,5 +1,12 @@
 #!/system/bin/sh
 
+
+
+
+# TIME:20250921
+
+
+
 # 查看安卓解释器路径（可选）
 which sh
 
