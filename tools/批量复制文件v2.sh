@@ -1,5 +1,9 @@
 #!/bin/sh
 
+
+# TIME:20250921
+
+
 SCRIPT_DIR="$(dirname "$(realpath "$0")")"
 FILELIST="${SCRIPT_DIR}/批量复制文件.文件列表.txt"
 CP_DIR="${SCRIPT_DIR}/cpAAAAAA"
