@@ -1,7 +1,11 @@
-#!/bin/sh
+#!/system/bin/sh
+
+
 
 
 # TIME:20250921
+
+
 
 
 SCRIPT_DIR="$(dirname "$(realpath "$0")")"
