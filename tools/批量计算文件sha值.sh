@@ -1,10 +1,8 @@
-#!/system/bin/sh
+#!/bin/bash
 
 
 
-
-# TIME:20250921
-
+#TIME:251007
 
 
 
@@ -17,8 +15,11 @@
 # 获取脚本所在目录
 script_dir=$(dirname "$(readlink -f "$0")")
 folder_name="sha256_files_056dcd2f46d8d0ec93"  # 目标基准目录
-result_file="${script_dir}/sha256_results.txt"
-error_log="${script_dir}/sha256_errors.log"
+#result_file="${script_dir}/sha256_results.txt"
+#error_log="${script_dir}/sha256_errors.log"
+ts=$(date +%y%m%d%H%M)
+result_file="${script_dir}/256SHA_results_${ts}.txt"
+error_log="${script_dir}/256SHA_errors_${ts}.log"
 
 # 定义目标目录完整路径
 target_dir="${script_dir}/${folder_name}"
